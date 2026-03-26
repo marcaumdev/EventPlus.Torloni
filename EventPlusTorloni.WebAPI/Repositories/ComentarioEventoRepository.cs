@@ -1,10 +1,11 @@
 ﻿using EventPlusTorloni.WebAPI.BdContextEvent;
+using EventPlusTorloni.WebAPI.Interfaces;
 using EventPlusTorloni.WebAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace EventPlusTorloni.WebAPI.Repositories;
 
-public class ComentarioEventoRepository
+public class ComentarioEventoRepository : IComentarioEventoRepository
 {
     private readonly EventContext _context;
 
